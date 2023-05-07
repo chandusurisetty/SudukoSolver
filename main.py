@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,url_for,redirect
 from solve import Solve
 app=Flask(__name__)
-
+app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 board=[]
 previos=[]
 text="Suduko"
